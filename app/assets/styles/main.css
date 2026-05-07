@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+    --default-font-size: 18px;
+    --default-line-height: 1.62;
+    --color-main: #F8F6F0;
+    --color-foreground: #1A221F;
+    --color-accent: #C69C6D;
+    --color-emerald: #121C19;
+    --color-stroke: #E6E2D6;
+    --color-fg: #5A625E;
+}
+
+@layer base {
+    body {
+        font-size: var(--default-font-size);
+        font-optical-sizing: auto;
+        line-height: var(--default-line-height);
+        background: var(--color-main);
+        color: var(--color-fg);
+    }
+}
+
+@utility container {
+    @apply max-w-300 mx-auto px-5 xl:px-8;
+}
