@@ -1,11 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div>Home Page</div>
-</template>
-
-<style scoped>
-
-</style>
+  <div class="text-2xl">Home Page</div>
+</template>

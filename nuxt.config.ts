@@ -14,6 +14,13 @@ export default defineNuxtConfig({
     '@nuxt/scripts'
   ],
 
+  fonts: {
+    families: [
+      { name: 'Inter', provider: 'google', weights: [400, 700] },
+      { name: 'PT Serif', provider: 'google', weights: [400, 700] }
+    ]
+  },
+
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
