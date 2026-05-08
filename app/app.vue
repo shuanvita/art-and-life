@@ -2,5 +2,5 @@
   <AppHeader />
   <NuxtRouteAnnouncer/>
   <NuxtPage/>
-  <footer>Footer</footer>
+  <footer class="container">Footer</footer>
 </template>

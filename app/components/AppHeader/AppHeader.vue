@@ -3,11 +3,7 @@
 </script>
 
 <template>
-  <header>
+  <header class="container">
     <AppHeaderLogo/>
   </header>
 </template>
-
-<style scoped>
-
-</style>
