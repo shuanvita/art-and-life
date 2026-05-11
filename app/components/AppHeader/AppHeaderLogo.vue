@@ -1,11 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div>Logo</div>
-</template>
-
-<style scoped>
-
-</style>
+  <NuxtLink class="uppercase font-bold font-sans" to="/">Fyrre Magazine</NuxtLink>
+</template>

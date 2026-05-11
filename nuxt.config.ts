@@ -11,8 +11,15 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',
-    '@nuxt/scripts'
+    '@nuxt/scripts',
+    'nuxt-svgo'
   ],
+
+  svgo: {
+    autoImportPath: './assets/svg/',
+    componentPrefix: 'i',
+    defaultImport: 'component',
+  },
 
   fonts: {
     families: [
