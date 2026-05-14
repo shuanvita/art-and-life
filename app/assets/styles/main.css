@@ -1,91 +1,91 @@
 @import "tailwindcss";
 
 @theme {
-    --default-font-size: 18px;
-    --default-line-height: 1.62;
+  --default-font-size: 18px;
+  --default-line-height: 1.62;
 
-    /* Colors */
-    --color-main: #F8F6F0;
-    --color-foreground: #1A221F;
-    --color-fg: #5A625E;
-    --color-fg-muted: #8C9490;
-    --color-accent: #C69C6D;
-    --color-accent-light: #E3CDB2;
-    --color-accent-dark: #A07C4B;
-    --color-accent-darker: #7A5D34;
-    --color-emerald: #121C19;
-    --color-emerald-deep: #0A120F;
-    --color-emerald-soft: #21332D;
-    --color-stroke: #E6E2D6;
-    --color-stroke-light: rgba(255, 255, 255, 0.1);
-    --color-stroke-faint: rgba(255, 255, 255, 0.05);
-    --color-white: #FFFFFF;
+  /* Colors */
+  --color-main: #F8F6F0;
+  --color-foreground: #1A221F;
+  --color-fg: #5A625E;
+  --color-fg-muted: #8C9490;
+  --color-accent: #C69C6D;
+  --color-accent-light: #E3CDB2;
+  --color-accent-dark: #A07C4B;
+  --color-accent-darker: #7A5D34;
+  --color-emerald: #121C19;
+  --color-emerald-deep: #0A120F;
+  --color-emerald-soft: #21332D;
+  --color-stroke: #E6E2D6;
+  --color-stroke-light: rgba(255, 255, 255, 0.1);
+  --color-stroke-faint: rgba(255, 255, 255, 0.05);
+  --color-white: #FFFFFF;
 
-    /* Typography */
-    --font-sans: "Inter", ui-sans-serif, system-ui;
-    --font-serif: "PT Serif", ui-serif, Georgia;
+  /* Typography */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-serif: "PT Serif", ui-serif, Georgia;
 
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
 
-    /* Text: <size>px / <line-height>px / <letter-spacing>px */
-    --text-2xs: 10px;
-    --text-2xs--line-height: 1.5;
-    --text-2xs--letter-spacing: 0.165em;
+  /* Text: <size>px / <line-height>px / <letter-spacing>px */
+  --text-2xs: 10px;
+  --text-2xs--line-height: 1.5;
+  --text-2xs--letter-spacing: 0.165em;
 
-    --text-xs: 11px;
-    --text-xs--line-height: 1.5;
-    --text-xs--letter-spacing: 0.182em;
+  --text-xs: 11px;
+  --text-xs--line-height: 1.5;
+  --text-xs--letter-spacing: 0.182em;
 
-    --text-sm: 12px;
-    --text-sm--line-height: 16px;
-    --text-sm--letter-spacing: 0.183em;
+  --text-sm: 12px;
+  --text-sm--line-height: 16px;
+  --text-sm--letter-spacing: 0.183em;
 
-    --text-base: 14px;
-    --text-base--line-height: 20px;
+  --text-base: 14px;
+  --text-base--line-height: 20px;
 
-    --text-md: 18px;
-    --text-md--line-height: 28px;
+  --text-md: 18px;
+  --text-md--line-height: 28px;
 
-    --text-lg: 20px;
-    --text-lg--line-height: 1.375;
+  --text-lg: 20px;
+  --text-lg--line-height: 1.375;
 
-    --text-xl: 24px;
-    --text-xl--line-height: 33px;
+  --text-xl: 24px;
+  --text-xl--line-height: 33px;
 
-    --text-2xl: 32px;
-    --text-2xl--line-height: 1.2;
+  --text-2xl: 32px;
+  --text-2xl--line-height: 1.2;
 
-    --text-3xl: 40px;
-    /* 1.111 = 44.44px / 40px; recompute if --text-3xl changes */
-    --text-3xl--line-height: 1.111;
+  --text-3xl: 40px;
+  /* 1.111 = 44.44px / 40px; recompute if --text-3xl changes */
+  --text-3xl--line-height: 1.111;
 
-    --text-4xl: 56px;
-    --text-4xl--line-height: 70px;
+  --text-4xl: 56px;
+  --text-4xl--line-height: 70px;
 
-    --text-display: 100px;
-    --text-display--line-height: 100px;
-    --text-display--letter-spacing: -0.025em;
+  --text-display: 100px;
+  --text-display--line-height: 100px;
+  --text-display--letter-spacing: -0.025em;
 
-    /* Tracking (rem = root-relative, stable across font-sizes; assumes :root font-size 16px) */
-    --tracking-tight: -0.15625rem;
-    --tracking-normal: 0;
-    --tracking-wide: 0.034375rem;
-    --tracking-wider: 0.103125rem;
-    --tracking-widest: 0.1375rem;
+  /* Tracking (rem = root-relative, stable across font-sizes; assumes :root font-size 16px) */
+  --tracking-tight: -0.15625rem;
+  --tracking-normal: 0;
+  --tracking-wide: 0.034375rem;
+  --tracking-wider: 0.103125rem;
+  --tracking-widest: 0.1375rem;
 }
 
 @layer base {
-    body {
-        font-family: var(--font-serif), serif;
-        font-size: var(--default-font-size);
-        font-optical-sizing: auto;
-        line-height: var(--default-line-height);
-        background: var(--color-main);
-        color: var(--color-fg);
-    }
+  body {
+    font-family: var(--font-serif), serif;
+    font-size: var(--default-font-size);
+    font-optical-sizing: auto;
+    line-height: var(--default-line-height);
+    background: var(--color-main);
+    color: var(--color-fg);
+  }
 }
 
 @utility container {
-    @apply max-w-300 mx-auto px-5 xl:px-8;
+  @apply max-w-300 mx-auto px-5 xl:px-8;
 }

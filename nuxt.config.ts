@@ -5,6 +5,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en',
+      }
+    }
+  },
+
   css: ['~/assets/styles/main.css'],
 
   modules: [
@@ -16,8 +24,8 @@ export default defineNuxtConfig({
   ],
 
   svgo: {
-    autoImportPath: './assets/svg/',
-    componentPrefix: 'i',
+    autoImportPath: '~/assets/svg/',
+    componentPrefix: 'svg',
     defaultImport: 'component',
   },
 

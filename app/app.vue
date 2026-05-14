@@ -1,6 +1,13 @@
+<script setup lang="ts">
+useSeoMeta({
+  titleTemplate: '%s — Art & Life',
+  ogType: 'website',
+  ogSiteName: 'Art & Life',
+})
+</script>
+
 <template>
-  <AppHeader />
-  <NuxtRouteAnnouncer/>
-  <NuxtPage/>
-  <footer class="container">Footer</footer>
+  <NuxtLayout>
+    <NuxtPage/>
+  </NuxtLayout>
 </template>
