@@ -46,7 +46,7 @@ if (import.meta.client) {
         class="fixed inset-0 z-50 bg-emerald text-white flex flex-col lg:hidden"
       >
         <div class="flex items-center justify-between container py-6 border-b border-stroke-light">
-          <AppHeaderLogo class="text-white text-base tracking-[2.1px]" @click="close" />
+          <AppLogo class="text-white text-base tracking-[2.1px]" @click="close" />
           <button type="button" aria-label="Close menu" @click="close">
             <svg-close class="w-6 h-6 text-white" />
           </button>
